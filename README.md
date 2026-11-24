@@ -2,6 +2,10 @@
 
 ## Current test version: V2 / 1.1.0
 
+**Fire Stick Downloader (short verified link):** https://is.gd/HelensTV2
+
+Type `https://is.gd/HelensTV2` in the Downloader URL box. This redirects to the V2 APK below.
+
 **[Download V2 Fire Stick APK directly](https://raw.githubusercontent.com/Shawnkrug/helens-picture-viewer-downloads/main/releases/HelensPictureViewer-FireStick-v2-TEST.apk)**
 
 - File: `HelensPictureViewer-FireStick-v2-TEST.apk`
