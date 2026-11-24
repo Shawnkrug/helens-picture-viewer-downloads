@@ -1,29 +1,24 @@
-# Helen's Picture Viewer — Fire TV test APK
+# Helen's Picture Viewer — Fire TV photo collection viewer
 
-A simple local Wi-Fi photo viewer. Open the app on an Android-based Amazon Fire TV Stick. A QR code appears on the television. Scan it using the iPhone/iPad Camera, open the local page in Safari, and choose photos to show on the TV.
+## Current test version: V2 / 1.1.0
 
-## Download for Downloader
+**[Download V2 Fire Stick APK directly](https://raw.githubusercontent.com/Shawnkrug/helens-picture-viewer-downloads/main/releases/HelensPictureViewer-FireStick-v2-TEST.apk)**
 
-**[Download the Fire Stick APK directly](https://raw.githubusercontent.com/Shawnkrug/helens-picture-viewer-downloads/main/releases/HelensPictureViewer-FireStick-v1-TEST.apk)**
+- File: `HelensPictureViewer-FireStick-v2-TEST.apk`
+- Bytes: 249601
+- SHA-256: `654b108f7651f2e0a5d415123a4ccaabeb6cdec22dc076a8cd7ed2f4d59c342b`
+- Android-based Amazon Fire OS test sideload; NOT Vega OS; test-signed with debug certificate; no physical device QA completed
+- If Android refuses to update V1 due changed test signing certificate, uninstall V1 first.
 
-- Filename: `HelensPictureViewer-FireStick-v1-TEST.apk`
-- Size: 246,021 bytes
-- SHA-256: `9ccb623f6f2813fbaad7024f106c05db4e7c9efec27a1b555c2030c6f25b47f5`
-- App version: 1.0.0
-- Test-signed for owner sideloading, **not** Amazon Appstore release
-- Compatible with Android-based Fire OS; **not** Amazon Vega OS
-- No independent device QA completed yet
+### How to use
+1. On an Android-based Fire Stick, use AFTVnews Downloader to download the **V2** APK using the direct link above and install it.
+2. Launch Helen's Picture Viewer. Scan the QR with iPhone/iPad Camera while on the same trusted Wi-Fi.
+3. On the local Safari page, choose the entire photo collection and tap the picture where you want to start.
+4. Tap **Send Collection to TV** once; wait until all photos are received. TV will not rapidly cycle during upload.
+5. TV shows your chosen starting picture. Press Fire Stick remote **Left/Right** to move exactly one picture at a time; **Select** toggles slideshow, **Back** displays the QR.
+6. Available TV storage, rather than a 20-picture circular buffer, limits collection size. Transfer is local over HTTP with an ephemeral QR pairing token. Photos are temporary and cleared on TV app restart.
 
-To create a short numeric Downloader code, visit [AFTVnews Downloader Shortener](https://go.aftvnews.com/), paste the direct APK URL above, and complete the site's human verification. No numeric code was generated automatically.
+### Older version
+[V1 APK, retained for rollback](https://raw.githubusercontent.com/Shawnkrug/helens-picture-viewer-downloads/main/releases/HelensPictureViewer-FireStick-v1-TEST.apk). V1 holds only 20 images and should not be used for complete collections.
 
-## Use
-
-1. Install APK through AFTVnews Downloader on a compatible Fire TV; allow Downloader to install unknown apps when prompted.
-2. Open Helen's Picture Viewer on TV to display a QR code.
-3. Connect iPhone/iPad and Fire TV to the same home Wi-Fi.
-4. Scan with the iPhone Camera, open in Safari, and choose photos.
-5. Fire remote: Left/Right = Previous/Next, Select = Play/Pause, Back = QR code.
-
-Up to 20 recent photos remain in TV app memory only; no cloud upload. The phone-to-TV transfer uses local HTTP and a 128-bit rotating QR token, so use only trusted home Wi-Fi.
-
-The iPhone companion IPA and project source remain in the owner's private Google Drive and GitHub project; this public repository contains only APK distribution files.
+iPhone native companion V2 exists as an unsigned IPA in the owner's private Google Drive; the Safari QR interface works without installing the IPA.
